@@ -6,15 +6,15 @@ spec:
    replicas: 3
    selector: 
      app: myvertexapp
-     version: 2.6.1
+     version: 2.6.2
    template:                                     
      metadata:
        labels:
           app: myvertexapp
-          version: 2.6.1
+          version: 2.6.2
      spec:
         containers:
         - name: myvertexapp-container
-          image: laxmikant7007/myvertextest:1
+          image: laxmikant7007/myvertextest:2
           ports: 
           - containerPort: 8080
